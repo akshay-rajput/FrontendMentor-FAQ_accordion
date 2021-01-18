@@ -5,39 +5,74 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="https://fonts.google.com/specimen/Kumbh+Sans">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles/helpers.css">
   <link rel="stylesheet" href="styles/main.css">
 
   <title>Frontend Mentor | FAQ Accordion Card</title>
-
 </head>
 <body>
   <main class="">
-    <div class="container">
-      How many team members can I invite?
-      You can invite up to 2 additional users on the Free plan. There is no limit on 
-      team members for the Premium plan.
-    
-      What is the maximum file upload size?
-      No more than 2GB. All files in your account must fit your allotted storage space.
-    
-      How do I reset my password?
-      Click “Forgot password” from the login page or “Change password” from your profile page.
-      A reset link will be emailed to you.
-    
-      Can I cancel my subscription?
-      Yes! Send us a message and we’ll process your request no questions asked.
-    
-      Do you provide additional support?
-      Chat and email support is available 24/7. Phone lines are open during normal business hours.
-    
+    <div class="faq-card">
+      <div class="card-image">
+        <img class="card-bg-image" srcset="./images/bg-pattern-mobile.svg 480w,
+        ./images/bg-pattern-desktop.svg 768w"
+            sizes="(max-width: 600px) 480px,
+                    768px"
+            src="./images/bg-pattern-desktop.svg"
+            alt="Background pattern">
+
+        <img class="card-fg-image" srcset="./images/illustration-woman-online-mobile.svg 480w,
+        ./images/illustration-woman-online-desktop.svg 768w"
+            sizes="(max-width: 600px) 480px,
+                    768px"
+            src="./images/illustration-woman-online-desktop.svg"
+            alt="Woman online">
+
+        <img src="./images/illustration-box-desktop.svg" alt="box" class="card-box-image">
+      </div>
+      <div class="card-text py-4 px-4 mx-4 my-4">
+        <h2 class="faq-title py-2 my-2">FAQ</h2>
+
+        <div class="card-question py-2">
+          <h4 class="">
+            How many team members can I invite?
+          </h4>
+          You can invite up to 2 additional users on the Free plan. There is no limit on 
+          team members for the Premium plan.
+        </div>
+
+        <div class="card-question py-2">
+          What is the maximum file upload size?
+          No more than 2GB. All files in your account must fit your allotted storage space.
+        </div>
+
+        <div class="card-question py-2">
+          How do I reset my password?
+          Click “Forgot password” from the login page or “Change password” from your profile page.
+          A reset link will be emailed to you.
+        </div>
+
+        <div class="card-question py-2">
+          Can I cancel my subscription?
+          Yes! Send us a message and we’ll process your request no questions asked.
+        </div>
+              
+        <div class="card-question py-2">
+          Do you provide additional support?
+          Chat and email support is available 24/7. Phone lines are open during normal business hours.
+        </div>
+      </div>
     </div>
   </main>
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+
+  <footer class="text-center">
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://akshayr.netlify.app" target="_blank">Akshay</a>.
+    </div>
+  </footer>
 </body>
 </html>
