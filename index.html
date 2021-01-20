@@ -16,13 +16,17 @@
 <body>
   <main class="">
     <div class="faq-card">
+      <img src="./images/illustration-box-desktop.svg" alt="box" class="card-box-image">
+      
       <div class="card-image">
+        <img src="./images/illustration-box-desktop.svg" alt="box" class="card-image-hidden">
+      
         <img class="card-bg-image" srcset="./images/bg-pattern-mobile.svg 480w,
         ./images/bg-pattern-desktop.svg 768w"
-            sizes="(max-width: 600px) 480px,
-                    768px"
-            src="./images/bg-pattern-desktop.svg"
-            alt="Background pattern">
+        sizes="(max-width: 600px) 480px,
+                768px"
+        src="./images/bg-pattern-desktop.svg"
+        alt="Background pattern">
 
         <img class="card-fg-image" srcset="./images/illustration-woman-online-mobile.svg 480w,
         ./images/illustration-woman-online-desktop.svg 768w"
@@ -30,77 +34,94 @@
                     768px"
             src="./images/illustration-woman-online-desktop.svg"
             alt="Woman online">
-
-        <img src="./images/illustration-box-desktop.svg" alt="box" class="card-box-image">
       </div>
+      
       <div class="card-text py-4 px-4 mx-4 my-4">
         <h2 class="faq-title py-2 my-2">FAQ</h2>
 
-        <div class="card-question py-2">
-          <a href="javascript:void(0);" class="btn-expand flex justify-between align-center py-2">
-            <h4 class="question">
-              How many team members can I invite?
-            </h4>
-            <img src="./images/icon-arrow-down.svg" alt="" class="arrow-down-image">
-          </a>
-        
-          <p class="answer">
-            You can invite up to 2 additional users on the Free plan. There is no limit on 
-            team members for the Premium plan.
-          </p>
-        </div>
-
-        <div class="card-question py-2">
-          <a href="javascript:void(0);" class="btn-expand flex justify-between align-center py-2">
-            <h4 class="question">
-              What is the maximum file upload size?
-            </h4>
-            <img src="./images/icon-arrow-down.svg" alt="" class="arrow-down-image">
-          </a>
-        
-          <p class="answer">
-            No more than 2GB. All files in your account must fit your allotted storage space.
-          </p>
-        </div>
-
-        <div class="card-question py-2">
-          <a href="javascript:void(0);" class="btn-expand flex justify-between align-center py-2">
-            <h4 class="question">
-              How do I reset my password?
-            </h4>
-            <img src="./images/icon-arrow-down.svg" alt="" class="arrow-down-image">
-          </a>
-        
-          <p class="answer">
-            Click “Forgot password” from the login page or “Change password” from your profile page.
-            A reset link will be emailed to you.
-          </p>
-        </div>
-
-        <div class="card-question py-2">
-          <a href="javascript:void(0);" class="btn-expand flex justify-between align-center py-2">
-            <h4 class="question">
-              Can I cancel my subscription?
-            </h4>
-            <img src="./images/icon-arrow-down.svg" alt="" class="arrow-down-image">
-          </a>
-        
-          <p class="answer">
-            Yes! Send us a message and we’ll process your request no questions asked.
-          </p>
-        </div>
-              
-        <div class="card-question py-2">
-          <a href="javascript:void(0);" class="btn-expand flex justify-between align-center py-2">
-            <h4 class="question">
-              Do you provide additional support?
-            </h4>
-            <img src="./images/icon-arrow-down.svg" alt="" class="arrow-down-image">
-          </a>
-        
-          <p class="answer">
-            Chat and email support is available 24/7. Phone lines are open during normal business hours.
-          </p>
+        <div class="allQuestions">
+          <div class="card-question py-2">
+            <label for="question1" class="btn-expand flex justify-between align-center py-2">
+              <h4 class="question">
+                How many team members can I invite?
+              </h4>
+              <img src="./images/icon-arrow-down.svg" alt="" class="arrow-down-image">
+            </label>
+  
+            <!-- hide input -->
+            <input type="radio" name="question" id="question1">
+          
+            <p class="answer">
+              You can invite up to 2 additional users on the Free plan. There is no limit on 
+              team members for the Premium plan.
+            </p>
+          </div>
+  
+          <div class="card-question py-2">
+            <label for="question2" class="btn-expand flex justify-between align-center py-2">
+              <h4 class="question">
+                What is the maximum file upload size?
+              </h4>
+              <img src="./images/icon-arrow-down.svg" alt="" class="arrow-down-image">
+            </label>
+  
+            <!-- hide input -->
+            <input type="radio" name="question" id="question2">
+          
+            <p class="answer">
+              No more than 2GB. All files in your account must fit your allotted storage space.
+            </p>
+          </div>
+  
+          <div class="card-question py-2">
+            <label for="question3" class="btn-expand flex justify-between align-center py-2">
+              <h4 class="question">
+                How do I reset my password?
+              </h4>
+              <img src="./images/icon-arrow-down.svg" alt="" class="arrow-down-image">
+            </label>
+  
+            <!-- hide input -->
+            <input type="radio" name="question" id="question3">
+          
+            <p class="answer">
+              Click “Forgot password” from the login page or “Change password” from your profile page.
+              A reset link will be emailed to you.
+            </p>
+          </div>
+  
+          <div class="card-question py-2">
+            
+            <label for="question4" class="btn-expand flex justify-between align-center py-2">
+              <h4 class="question">
+                Can I cancel my subscription?
+              </h4>
+              <img src="./images/icon-arrow-down.svg" alt="" class="arrow-down-image">
+            </label>
+  
+            <!-- hide input -->
+            <input type="radio" name="question" id="question4">
+  
+            <p class="answer">
+              Yes! Send us a message and we’ll process your request no questions asked.
+            </p>
+          </div>
+                
+          <div class="card-question py-2">
+            <label for="question5" class="btn-expand flex justify-between align-center py-2">
+              <h4 class="question">
+                Do you provide additional support?
+              </h4>
+              <img src="./images/icon-arrow-down.svg" alt="" class="arrow-down-image">
+            </label>
+  
+            <!-- hide input -->
+            <input type="radio" name="question" id="question5">
+  
+            <p class="answer">
+              Chat and email support is available 24/7. Phone lines are open during normal business hours.
+            </p>
+          </div>
         </div>
       </div>
     </div>
